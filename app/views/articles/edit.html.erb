@@ -1,0 +1,10 @@
+<h1>Edit Page</h1>
+
+<%= @request.errors.full_messages.join(", ") %>
+
+<%= form_for @request do |f| %>
+
+<div><%= f.label :name %></div>
+<div><%= f.text_field :name %></div>
+<div><%= f.label :email %></div>
+<div><%= f.email_field :email %></div>

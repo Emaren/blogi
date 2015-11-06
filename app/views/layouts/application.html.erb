@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blogi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= link_to "Index", articles_path %> |
+<%= link_to "New", new_article_path %> |
+<%= link_to 'Back', articles_path %>
+<hr>
+<hr>
+<%= yield %>
+
+</body>
+</html>
